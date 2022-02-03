@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+justify-content: center;
+height: 100vh;
+align-items: center;
+background: rgb(255, 255, 255);
+
+}
+
+.box{
+    position: relative;
+}
+
+input[type="date"]{
+position: relative;
+width: 20rem;
+height: 4rem;
+padding: 20px;
+border: 0;
+background: rgb(255, 74, 149);
+border-radius: 10px;
+outline: none;
+font-size: 22px;
+font-family: sans-serif;
+font-weight: 600;
+letter-spacing: 2px;
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 226);
+user-select: none;
+}
+
+.fas{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 16px;
+    right: 6%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    
+
+}
+
+input:active ~ .fas{
+    transform: scale(.9);
+    }
+
+::-webkit-calendar-picker-indicator{
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+   
